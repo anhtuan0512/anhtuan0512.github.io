@@ -55,7 +55,7 @@
 			setTimeout(function(){
 				var loading = document.getElementsByClassName("wrap-preloader2")[0];
 				loading.style.display ="none";
-			}, 4000)
+			}, 2000)
 		}
 		})
 	</script>
@@ -171,13 +171,19 @@
 		<h2>MADE FROM PLANTS</h2>
 		<p>Made up of five key components, this delectable, better-for-you option <br>gives you the meaty experience you crave without compromise.</p>
 
-		<div class="scrolldown">
-			<span></span>
-				<span></span>
-					<span></span>
-				
+		
+		<div class="imgParallax">
+			<img src="home-img.png"  id="hamburger">
 		</div>
+			
 	</div>
+	<script>
+		let hamburger = document.getElementById('hamburger');
+		window.addEventListener('scroll', function(){
+			let value = window.scrollY;
+			hamburger.style.top =value * 1.05 + 'px';
+		})
+	</script>
 	<section class="parrallax-effect">
 		<img src="https://www.beyondmeat.com/static/burger_top-3677f35291a10693e661c6ef63426ed2.png" data-speed="-5" class="layer">
 	<img src="https://www.beyondmeat.com/static/green-2ab0b0170ac0223f1641d662df5ed9f8.png" alt=""
