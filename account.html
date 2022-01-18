@@ -52,6 +52,7 @@
 			
 
 				<ul class="dropdown-list dropdown-learn" >
+					<li><a href="blog.html" >Blog</a></li>
 					<li><a href="learn.html" >Mission</a></li>
 					<li><a href="ingredients.html" >Ingredients</a></li>
 					
@@ -143,13 +144,34 @@
 			<div class="user signupBx">
 				
 				<div class="formBx">
-					<form >
+					<form id="form">
 						<h2>CREATE AN ACCOUNT</h2>
-						<input type="text" placeholder ="Username">
-						<input type="text" placeholder ="Email Address">
-						<small></small>
-						<input type="password" placeholder ="Create Password">
-						<input type="password" placeholder ="Confirm Password">
+						<div class="form-control ">
+							<input type="text" placeholder ="Username" id="username">
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+							<small>Error message</small>
+						</div>
+						<div class="form-control ">
+							<input type="text" placeholder ="Email Address" id="email">
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+							<small>Error message</small>
+						</div>
+						
+						<div class="form-control">
+							<input type="password" placeholder ="Create Password" id="password">
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+							<small>Error message</small>
+						</div>
+						<div class="form-control">
+							<input type="password" placeholder ="Confirm Password" id="checkpassword">
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+							<small>Error message</small>
+						</div>
+						
 						<input type="submit" value ="sign up">
 						<p class="signup">Already have an account<a href="#" onclick="toggleForm();">Sign in</a></p>
 					</form>
@@ -161,7 +183,72 @@
 		</div>		
 	</section>
 	
-		
+	<script>
+		const form = document.getElementById('form');
+		const username = document.getElementById('username');
+		const email = document.getElementById('email');
+		const password = document.getElementById('password');
+		const password2 = document.getElementById('checkpassword');
+
+		form.addEventListener('submit', (e) =>{
+			e.preventDefault();
+
+			checkInputs();
+		});
+
+		function checkInputs(){
+			const usernameValue = username.value.trim();
+			const emailValue = email.value.trim();
+			const passwordValue = password.value.trim();
+			const password2Value = password2.value.trim();
+
+			if(usernameValue === ''){
+				setErrorFor(username, 'Username cannot be blank');
+			}else{
+				setSuccessFor(username);
+			}
+
+			if(emailValue === ''){
+				setErrorFor(email, 'Email cannot be blank');
+			}else if(!isEmail(emailValue)){
+				setErrorFor(email, 'Email is not valid');
+			}else{
+				setSuccessFor(email);
+			}
+
+			if(passwordValue === ''){
+				setErrorFor(password, 'Password cannot be blank');
+			}else {
+				setSuccessFor(password);
+
+			}
+
+			if(password2Value === ''){
+				setErrorFor(password2, 'Confirm Password cannot be blank');
+			}else if(passwordValue !== password2Value){
+				setErrorFor(password2, 'Passwords does not match');
+			} else{
+				setSuccessFor(password2);
+
+			}
+		}
+		function setErrorFor(input, message){
+			const formControl = input.parentElement;
+			const small = formControl.querySelector('small');
+
+			small.innerText = message;
+			formControl.className = 'form-control error';
+		}
+
+		function setSuccessFor(input){
+			const formControl = input.parentElement;
+			formControl.className ='form-control success';
+		}
+
+		function isEmail(email){
+			return  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+		}
+	</script>
 			
 		
 
@@ -179,7 +266,7 @@
 	<section class="movement">
 		<div class="block">
 			<h1>JOIN THE MOVEMENT</h1>
-			<p>To receive exclusive Beyond Meat offers, updates and more.</p>
+			<p>To receive exclusive VGMeat offers, updates and more.</p>
 		</div>
 		<div class="sign-up">
 			
@@ -187,6 +274,9 @@
 			<input type="text" value="" class="email-signup" placeholder="Email">
 	
 			<button type="">Sign Up</button>
+		</div>
+		<div class="muc-luc">
+			<p>By clicking 'Sign Up', you consent to VGMeat using your email address and postal code to receive emails about products, recipes, and more. You can opt-out at any time.</p>
 		</div>
 	</section>
 

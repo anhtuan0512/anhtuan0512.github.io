@@ -14,6 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="magnific-popup.css">
 </head>
 <body>
 	<div class="wrap-loader">
@@ -44,7 +46,7 @@
 			setTimeout(function(){
 				var loading = document.getElementsByClassName("wrap-loader")[0];
 				loading.style.display ="none";
-			}, 4000)
+			}, 3000)
 		}
 	</script>
 	<div class="ring">	
@@ -92,6 +94,7 @@
 			
 
 				<ul class="dropdown-list dropdown-learn" >
+					<li><a href="blog.html" >Blog</a></li>
 					<li><a href="learn.html" >Mission</a></li>
 					<li><a href="ingredients.html" >Ingredients</a></li>
 					
@@ -165,12 +168,12 @@
 		<div class="container-service">
 			<div class="banner-inner">
 				<h2>The Finest Ingredients for taste better</h2>
-				<p>Patrick Brown believes Impossible “delivers everything that is of value of meat for consumers” without having to source it from actual animals.</p>
+				<p>We delivers everything that is of value of meat for consumers without having to source it from actual animals.</p>
 			</div>	
 
 			<div class="banner-inner text-right">
 				<h2>Modern Recipes Greatly Taste Food</h2>
-				<p> the soy-based hemoglobin that gives the products its iron-rich meat-like bleeding quality</p>
+				<p> VGMEAT is a game changer for meat eaters in meat industry </p>
 			</div>
 		</div>
 	
@@ -256,24 +259,24 @@
 					
 					<form action="" method="get" accept-charset="utf-8" class="form-contact">
 						<div class="input-box">						
-						<input type="text" name="" required="required" >
-						<span>First Name</span>
+							<input type="text" name="" required="required" >
+							<span>First Name</span>
 						</div>
 						<div class="input-box">
 							<input type="text" name="" required="required" >
 							<span>Last Name</span>
-							</div>
-							<div class="input-box">							
+						</div>
+						<div class="input-box">							
 								<input type="text" name="" required="required">
 								<span>Business Name</span>
-								</div>
+						</div>
 						<div class="input-box">
-						<input type="text" name="" required="required" >	
-						<span>City</span>
+							<input type="text" name="" required="required" >	
+							<span>City</span>
 						</div>	
 							<div class="input-box">
-						<input type="text" name="" required="required" >
-						<span>Email</span>
+							<input type="text" name="" required="required" >
+							<span>Email</span>
 						</div>	
 						<div class="input-box">	
 						<input type="text" name="" required="required" >	
@@ -407,7 +410,7 @@
 <section class="study" style="text-align:center;">
 		<h1>OUR IMPACT</h1>
 		<p>A peer-reviewed Life Cycle Analysis (LCA) conducted by the University of Michigan compared the environmental impact of the original Plant-Based Burger to a ¼ lb. U.S. beef burger. The result? Producing a Plant-Based Burger uses significantly less water, land and energy – and it generates fewer Greenhouse Gas Emissions (GHGE) than a beef burger</p>
-		<div class="btn-study"><button  class="link-product">Read The Study</button></div>
+		<div class="btn-study"><a href="https://youtu.be/98Xvl-uTmlw" class="videoplay"><button  class="link-product">View Our Impact</button></a></div>
 		<div class="statistic" style="color: rgb(117, 193, 84)">
 			<div class="impact">
 				<h2>99% </h2>
@@ -451,12 +454,52 @@
 		</div>
 	</section>
 
-	
+	<script src="jquery.magnific-popup.js"></script>
+	<script src="jquery.magnific-popup.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$(".videoplay").magnificPopup({
+			 type: 'iframe',
+    iframe: {
+      markup: '<div class="mfp-iframe-scaler">'+
+                '<div class="mfp-close"></div>'+
+                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+              '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+
+      patterns: {
+        youtube: {
+          index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+          id: 'v=', // String that splits URL in a two parts, second part should be %id%
+          // Or null - full URL will be returned
+          // Or a function that should return %id%, for example:
+          // id: function(url) { return 'parsed id'; } 
+          src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe. 
+        },
+        vimeo: {
+          index: 'vimeo.com/',
+          id: '/',
+          src: '//player.vimeo.com/video/%id%?autoplay=1'
+        },
+        gmaps: {
+          index: '//maps.google.',
+          src: '%id%&output=embed'
+        }
+
+        // you may add here more sources
+
+      },
+
+      srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+    }
+		});
+	})
+</script>
 
 <section class="movement">
 		<div class="block">
 			<h1>JOIN THE MOVEMENT</h1>
-			<p>To receive exclusive Beyond Meat offers, updates and more.</p>
+			<p>To receive exclusive VGMeat offers, updates and more.</p>
 		</div>
 		<div class="sign-up">
 			
@@ -464,6 +507,9 @@
 			<input type="text" value="" class="email-signup" placeholder="Email">
 	
 			<button type="">Sign Up</button>
+		</div>
+		<div class="muc-luc">
+			<p>By clicking 'Sign Up', you consent to VGMeat using your email address and postal code to receive emails about products, recipes, and more. You can opt-out at any time.</p>
 		</div>
 </section>
 
@@ -531,13 +577,18 @@
 			<div class="footer-contact">
 				<h3>GET IN TOUCH</h3>
 				<ul>
-					<li><a href="" >FAQs</a></li>
+					<li><a href="faq.html" >FAQs</a></li>
 					<li><a href="" >Contact us</a></li>
 				</ul>
 			</div>
 			<div class="footer-payment">
 				<h3>PAYMENT</h3>
 				<img src="https://vuacua.vn/themes/storefront/public/images/vuacua-visa-master-card.png?v=1.1.76">
+				<h3>LOGISTICS</h3>
+				<div class="block-logistics">
+					<img src="https://laz-img-cdn.alicdn.com/imgextra/i1/O1CN01eqNYKD1IN5FZTaF1d_!!6000000000880-2-tps-860-211.png">
+					<img src="https://laz-img-cdn.alicdn.com/tfs/TB1bsKlX8WD3KVjSZFsXXcqkpXa-190-50.png" alt="">
+				</div>
 			</div>
 		</div>		
 	</section>

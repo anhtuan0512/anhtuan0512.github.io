@@ -10,22 +10,22 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-	
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-	  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 <body>
-	<div class="scrollTop" onclick="scrollToTop()";><i class="fas fa-arrow-up"></i></div>
-	<div class="wrap-way-cook" style="background-color:rgb(71, 29, 14);">
+		
+<div class="wrapp-banner2">
 		
 	
-	<header>
+	<header >
 		<div class="logo">
 			<a href="mainpage.html" title=""><img src="	LOGO2.png" alt=""></a>
 		</div>
-		<ul class="menu-header">
+		<ul class="menu-header menu-header3">
 			<div class="dropdown">
 						
 			<div class="dropdown-select">
@@ -69,7 +69,7 @@
 			
 
 				<ul class="dropdown-list dropdown-learn" >
-					<li><a href="shop.html" >Shop online</a></li>
+					<li><a href="learn.html" >Shop online</a></li>
 					<li><a href="where-to-find.html" >Where to find</a></li>
 					
 				</ul>
@@ -78,19 +78,17 @@
 		<div class="icon">
 				<i class="fas fa-bars" id="menu-btn"></i>
 				<i class="fas fa-search " id="search-btn"></i>
-				<i class="fas fa-shopping-cart" id="cart-btn"></i>
+				
+				<a href="#" class="carticon" ><i class="fas fa-shopping-cart" id="cart-btn"></i><span class="total-items-in-cart">0</span></a>
+				
 				<a href="account.html" ><i class="fas fa-user" id="login-btn"></i></a>
 			</div>
+
 		<div class="wrap-search">
 			
 		
 		<div class="search-form search-input">
 			<div class="fas fa-times" id="close-search"></div>
-				
-		
-			
-				
-			
 		<input type="search" placeholder="search here..." id="search-box" id="search-box">
 		<div class="autocom-box">
 			<li>Burgers
@@ -107,231 +105,241 @@
 		</div>
 
 	</div>
-	
 	<div class="shopping-cart">
 		<div class="title">
 		<h1>YOUR CART</h1>
 	<i class="fas fa-times" id="close-shopping"></i>
 		</div>
-		<div class="text-center">
-			<span>YOUR CART IS EMPTY</span>
-			<div class="btn-shopping">
-				<a href=""><span>SHOP OUR PRODUCT</span></a>
-			</div>
+		<div class="cart">
+			
+		
+		<div class="cart-header">
+			<div class="column1">Item</div>
+			<div class="column2">Unit price</div>
+			<div class="column3">Units</div>			
 		</div>
-		<div class="cartdrawer-footer">
-			<button type="">Checkout</button>
+
+		<div class="cart-items">
+			<!-- <div class="cart-item">	
+				<div class="item-infor">
+					<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/1768da07-a2b1-44bb-8a56-a0c2f95be780.png" alt="">
+					<h4> Burgers</h4>
+				</div>
+				<div class="unit-price">
+					<small>79.000đ</small>
+				</div>
+				<div class="units">
+					  <div class="btn minus">-</div>
+                        	<div class="number">1</div>
+                        <div class="btn plus">+</div> 
+				</div>
+			</div> -->
 		</div>
+		<div class="cart-footer">
+			<div class="subtotal">
+                    Subtotal (0 items): 0đ
+                </div>
+			 <div class="checkout">
+                    Proceed to checkout
+                </div>
+		</div>
+	</div>
 	</div>
 	</header>
 		
-		<div class="banner-Cooking">
+	
+	</div>
+	
+	<section class="block-checkout">
+	<h1>PAYMENT</h1>	
+		<div class="row-payment">
 			
-		
-		<div class="left-side-cooking">
-			<h1>TRUFFLE MAC & CHEESE BEYOND BURGER</h1>
-			<p>CREATED BY: @CARROTSANDFLOWERS</p>
-
-			<div class="instruction-details">
-					<div class="row1">
-						<span>Serves</span>
-						<span>Prep Time</span>
-						<span>Cook Time</span>	
-					</div>
-					<div class="row2">
-						<span class="number">2</span>
-						<span class="number">5 MIN</span>
-						<span class="number">20 MIN</span>
-					</div>
-
+			<div class="infor-payment">
+				<h2>Payment information</h2>
+				<div class="input-infor-payment">
+					<input type="text" required="required" >
+					<span>your fullname</span>
 				</div>
+				<div class="input-infor-payment">
+						<input type="text" required="required">
+						<span>your phone number</span>
 				</div>
-		<div class="imgCooking">
-			<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/5156d955-9213-409f-b76c-1dbbab44e0dd.webp" alt="">
-		</div>
-		</div>
 
-
-		</div>
-	
-	<div class="Cooking" style="background-color:rgb(204, 185, 131);">
-		<div class="accordion">
-			<div class="accordion-item ">
-				<div class="accordion-header">
-					<h2>Ingredients</h2>
-					<i class="fas fa-chevron-down"></i>
+				<div class="input-infor-payment">
+						<input type="text" required="required">
+						<span>Email Address</span>
 				</div>
-				<div class="accordion-body">
-					<li>Nhân burger: 1 miếng</li>
-					<li>Ớt chuông: 1 khoanh</li>
-					<li> Hành tây: 1 khoanh</li>
-					<li>Cà chua: 3 lát</li>
-					<li>Dưa leo ngâm: 3 lát</li>
-					<li>Salad: 1 lá</li>
-					<li>Xốt burger: 50g</li>
-					<li>Vỏ bánh burger</li>
-					<li>Muối tiêu</li>
+				<div class="input-infor-payment">
+						<input type="text" required="required">
+						<span>District</span>
 				</div>
+				<div class="input-infor-payment">
+						<input type="text" required="required">
+						<span> Address</span>
+				</div>
+				
 			</div>
-
-			<div class="accordion-item ">
-				<div class="accordion-header">
-					<h2>process materials</h2>
-					<i class="fas fa-chevron-down"></i>
-				</div>
-				<div class="accordion-body">
-					<li> Hành tây, ớt chuông, cắt khoanh.</li>
-					<li>Cà chua cắt lát mỏng.</li>
-					<li>Vỏ bánh cắt đôi ta được phần nắp và phần đế bánh.</li>
-					<li>Dưa leo và sốt burger mua sẵn ngoài siêu thị.</li>
-					
-				</div>
-			</div>
-
-			<div class="accordion-item ">
-				<div class="accordion-header">
-					<h2>Let's do it</h2>
-					<i class="fas fa-chevron-down"></i>
-				</div>
-				<div class="accordion-body">
-					<li>Vỏ bánh, nhân thịt, hành tây, ớt chuông đem áp chảo 2 mặt.</li>
-					<li>Phần hành tây sẽ áp chảo với 1 ít muối tiêu.</li>
-					<li>Để tất cả khoảng 1-2’ thì tiến hành trở mặt.</li>
-					<li>Khi tất cả chín đều 2 mặt. Ta sẽ xếp thứ tự lần lượt: <br>
-						Đầu tiên phần đế bánh ta cho lên 1 ít sốt burger, tiếp theo là đến lá salad, 3 lát cà chua, 3 lát dưa leo muối, phần nhân thịt, khoanh hành tây, khoanh ớt chuông. Khi tất cả phần nhân đã cho vào hết ta cho thêm 1 ít sốt burger lên, và cuối cùng phần nắp bánh, ta cũng cho 1 ít sốt lên rồi sau đó úp lên phần nhân -> hoàn thành.
-					</li>
-					<li>Phần burger này có thể ăn kèm với khoai lang hoặc khoai tây.</li>
-					
-				</div>
-			</div>
-		</div>
-		<div class="container-link-product">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/oTQ42Ow2NM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
-		<div class="linkProduct">
-			<div class="imgFood-link">
-				<img src="burger.jpg" alt="">
-			</div>
-			<div class="link-buy-Product">
-				<h4>THIS RECIPE FEATURES</h4>
-				<h2> BURGER VGMEAT</h2>
-				<div class="nut-product">
-						<a href="" class="nut-link-buy">SHOP NOW</a>
-						<a href="" class="find-me">Product Details</a>
-				</div>
+			<div class="additional-infor">
+				<h2>Order notes (optional)</h2>
+				<textarea required="required" ></textarea>
+				<span>Order notes, for example, a more detailed delivery time <br>or location.</span>
 			</div>
 		</div>
 
-		</div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>	
-	<script>
-		$(document).ready(function() {
-			$('.accordion-item.active .accordion-body').slideDown();
-			$('.accordion-header').click(function(){
-				$(this).parent().toggleClass('active');
-				$(this).parent().children('.accordion-body').slideToggle();
-			});
-		});
-	</script>
+		<div class="Your-order">
+			<h1>YOUR ORDER</h1>
+			<table>
+				<thead>
+					<tr>
+						<td>Product</td>
+						<th>Checkout</th>
 
-	<section class="bonus-cooking">
-		<div class="wrap-cook" style="background-color:rgb(122, 56, 24);">
-		<div class="block">
-			<h1 style="color:rgb(221, 146, 113)">YOU MAY ALSO LIKE</h1>
-		</div>
-	
-	<div class="container-flip-card"  >
-		
-		<div class="card-food">
-			<div class="img-food">
-				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/1d5c8917-f7a1-45e0-9f1d-96621b36448f.jpeg" alt="">
-			</div >
-			<div class="instruction">
-				<h2> Sausage</h2>
-				<h3> Sausage Pesto Pizza</h3>
-				<div class="instruction-details">
-					<div class="row1">
-						<span>Serves</span>
-						<span>Prep Time</span>
-						<span>Cook Time</span>	
-					</div>
-					<div class="row2">
-						<span class="number">2</span>
-						<span class="number">5 MIN</span>
-						<span class="number">20 MIN</span>
-					</div>
-
-				</div>
-				<div class="nut-recipe">
-						<a href="how-to-cook.html" title="" class="name-recipe">View Recipe</a>
-						
-					</div>
-			</div>
-		</div>
-
-		<div class="card-food">
-			<div class="img-food">
-				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/de6d6e8e-3f5a-4b42-95c1-17d692fab822.webp" alt="">
-			</div >
-			<div class="instruction">
-				<h2> Beef VGMEAT</h2>
-				<h3> BEEF BUDDHA BOWLS</h3>
-				<div class="instruction-details">
-					<div class="row1">
-						<span>Serves</span>
-						<span>Prep Time</span>
-						<span>Cook Time</span>	
-					</div>
-					<div class="row2">
-						<span class="number">1</span>
-						<span class="number">10 MIN</span>
-						<span class="number">15 MIN</span>
-					</div>
-				</div>
-			<div class="nut-recipe">
-						<a href="how-to-cook.html" title="" class="name-recipe">View Recipe</a>
-						
-					</div>
-			</div>
-		</div>
-
-		<div class="card-food">
-			<div class="img-food">
-				<img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/984ad617-7fe6-43e7-aa90-cc33d510ab0a.jpeg" alt="">
-			</div >
-			<div class="instruction">
-				<h2> Burger VGMEAT</h2>
-				<h3> Elote Burger</h3>
-				<div class="instruction-details">
-					<div class="row1">
-						<span>Serves</span>
-						<span>Prep Time</span>
-						<span>Cook Time</span>	
-					</div>
-					<div class="row2">
-						<span class="number">2</span>
-						<span class="number">5 MIN</span>
-						<span class="number">20 MIN</span>
-					</div>
-
-				</div>
-				<div class="nut-recipe">
-						<a href="how-to-cook.html" title="" class="name-recipe">View Recipe</a>
-						
-					</div>
-			</div>
-		</div>
-	</div>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>SAUSAGE VGMEAT</td>
+						<td>91.000Đ <span>x2</span></td>
+					</tr>
+					<tr>
+						<td>BURGER VGMEAT</td>
+						<td>89.000Đ <span>x1</span></td>
+					</tr>
+					<tr>
+						<td>CHEACKOUT</td>
+						<td>271.000Đ</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</section>
 
+	<script src="products.js"></script>
+	<script>
+		const productsEl = document.querySelector(".shop-product-content");
+		const cartItemsEl = document.querySelector(".cart-items");
+		const subtotalEl = document.querySelector(".subtotal");
+		const totalItemsInCartEl = document.querySelector(".total-items-in-cart")
+		function renderProducts(){
+			products.forEach((product) =>{
 
+				productsEl.innerHTML += `   
+				<div class="shop-product-details" >
+				
+				<img src="${product.imgSrc}" alt="${product.name}">	
+				<h2> ${product.name}</h2>
+				<p>${product.description}.</p>
+				<div class="price-product">${product.price}</div>
+					
+				
+				<div class="number-payment">
+					<input type="number" value="1">
+					<div class="add-to-cart " onclick="addToCart(${product.id})" ><button type="">Add To Cart</button></div>
+				</div>
+		</div>
+					    `;
+			});
+		}
+		renderProducts();
+		let cart = JSON.parse(localStorage.getItem("CART"))  || [];
+
+		updateCart();
+		function addToCart(id){
+			if(cart.some((item) => item.id === id)){
+				changeNumberOfUnits("plus", id);
+			}else{	
+			const item =products.find((product) => product.id === id);
+			cart.push({
+				...item,
+				numberOfUnits:1
+			});
+		}
+
+		updateCart();
+			}
+
+		function updateCart(){
+			renderCartItems();
+			renderSubtotal();
+
+			localStorage.setItem("CART", JSON.stringify(cart));
+		}
+
+		function renderSubtotal(){
+			let totalPrice =0 , 
+			totalItems = 0; 
+
+			cart.forEach((item) =>{
+				totalPrice += item.price * item.numberOfUnits;
+				totalItems += item.numberOfUnits;
+			});
+			subtotalEl.innerHTML =`Subtotal (${totalItems} items):  ${totalPrice.toFixed(3)}đ`;
+			totalItemsInCartEl.innerHTML = totalItems;
+		}
+
+		function renderCartItems(){
+			cartItemsEl.innerHTML ="";
+			cart.forEach((item) =>{
+				cartItemsEl.innerHTML += `  
+
+					<div class="cart-item" >	
+				<div class="item-infor" onclick="removeItemFromCart(${item.id})">
+					<img src="${item.imgSrc}" alt="${item.name}">
+					<h4> ${item.name}</h4>
+				</div>
+				<div class="unit-price">
+					<small>${item.price}</small>đ
+				</div>
+				<div class="units">
+					  <div class="btn minus" onclick="changeNumberOfUnits('minus', ${item.id})">-</div>
+                        <div class="number">${item.numberOfUnits}</div>
+                        <div class="btn plus" onclick="changeNumberOfUnits('plus', ${item.id})">+</div> 
+				</div>
+			</div>
+				 `;
+			});
+		}
+		function removeItemFromCart(id){
+			cart = cart.filter( (item) => item.id !== id);
+			updateCart();
+		}
+		
+		function changeNumberOfUnits(action, id){
+			cart = cart.map((item) => {
+
+				let numberOfUnits =item.numberOfUnits;
+				if(item.id === id){
+					if(action === "minus" && numberOfUnits > 1){
+						numberOfUnits--;
+
+					}else if (action === "plus" && numberOfUnits < item.instock){
+						numberOfUnits++;
+					}
+				}
+				return {
+					...item,
+					numberOfUnits,
+				};
+			});
+
+			updateCart();
+		}
+	</script>
 	
+	
+	 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	 <script  href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	 <script>
+	 	$(".slider").slick({
+	 		centerMode:true,
+	 		slidesToShow:3
+	 	})
+	 </script>
 	<section class="movement">
 		<div class="block">
 			<h1>JOIN THE MOVEMENT</h1>
-			<p>To receive exclusive  VGMeat offers, updates and more.</p>
+			<p>To receive exclusive Beyond Meat offers, updates and more.</p>
 		</div>
 		<div class="sign-up">
 			
@@ -340,10 +348,12 @@
 	
 			<button type="">Sign Up</button>
 		</div>
+		<div class="muc-luc">
+			<p>By clicking 'Sign Up', you consent to VGMeat using your email address and postal code to receive emails about products, recipes, and more. You can opt-out at any time.</p>
+		</div>
 	</section>
 
-	
-	
+
 	<section class="footer">
 		<div class="container-footer">
 			<div class="footer-social">
@@ -407,7 +417,7 @@
 			<div class="footer-contact">
 				<h3>GET IN TOUCH</h3>
 				<ul>
-					<li><a href="faq.html" >FAQs</a></li>
+					<li><a href="" >FAQs</a></li>
 					<li><a href="" >Contact us</a></li>
 				</ul>
 			</div>
@@ -428,19 +438,9 @@
 		<p>Privacy Policy</p>
 		<p>Accessibility Statement</p>
 	</section>
-	<script>
-		window.addEventListener('scroll',function(){
-			var scroll = document.querySelector('.scrollTop');
-			scroll.classList.toggle("active" , window.scrollY > 500)
-		})
 
-		function scrollToTop(){
-			window.scrollTo({
-				top:0,
-				behavior: 'smooth'
-			})
-		}
-	</script>
+
+<!-- 
 	<script>
 		var slideshow = document.getElementById('slideshow');
 		var slides = slideshow.getElementsByTagName('img');
@@ -474,10 +474,9 @@
 			i = (i - 1 + slidesText.length) % slidesText.length ;
 			slidesText[i].classList.add('active');
 		}
-	</script>
+	</script> -->
 
-
-	<script>
+<script>
 		$(document).ready(function(){
 			$(window).scroll(function(){
 				if ($(this).scrollTop()){
@@ -489,6 +488,7 @@
 			});
 		});
 	</script>
+	
 	<script>
 		let searchForm = document.querySelector('.search-form');
 		document.querySelector('#search-btn').onclick = () => {
@@ -554,14 +554,6 @@
 			}
 			suggBox.innerHTML = listData;	
 		}
-	</script>
-
-	<script>
-		
-
-		var today = new Date(2021, 12 , 28);
-		console.log(today);
-		
 	</script>
 </body>
 </html>
